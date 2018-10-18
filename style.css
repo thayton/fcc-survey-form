@@ -19,6 +19,7 @@ form {
     padding: 1em;
     background: #f9f9f9;
     border: 1px solid #c1c1c1;
+    border-radius: 5px;
     font-size: 1em;
     line-height: 1.2em;
 }
@@ -33,10 +34,6 @@ label, span {
     text-align: right;
 }
 
-label#name-label, label#email-label, label#number-label {
-    padding-top: .375em;
-}
-
 fieldset label {
     display: block;
     text-align: left;        
@@ -45,6 +42,12 @@ fieldset label {
 input {
     line-height: 1.5em;
     padding: .375em .75em;
+}
+
+select {
+    height: 30px;
+    border-radius: 0px;
+    background-color: #fff;
 }
 
 button {
@@ -77,6 +80,10 @@ button:hover {
         grid-gap: 1em;
     }
 
+    label#name-label, label#email-label, label#number-label {
+        padding-top: .375em;
+    }
+    
     input, select, textarea {
         grid-column: 2/3;
     }
