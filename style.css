@@ -6,20 +6,37 @@ body {
     margin: 1em;
 }
 
+h1, p#description {
+    text-align: center;
+}
+
 form#survey-form {
     display: grid;
     grid-template-columns: 200px 1fr;
-    grid-gap: 10px;
+    grid-gap: 1em;
+    max-width: 600px;
+    margin: 0 auto;    
 }
 
 fieldset {
     border: none;
+    padding: 0;
+    margin: 0;
+}
+
+label, span {
+    text-align: right;    
 }
 
 fieldset label {
     display: block;
+    text-align: left;        
 }
 
-input, select, textarea, button {
+input, select, textarea {
     grid-column: 2/3;
+}
+
+button {
+    grid-column: 1/3;
 }
