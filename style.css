@@ -18,9 +18,9 @@ h1, p#description {
 
 form {
     display: grid;
-    max-width: 700px;
+    max-width: 900px;
     margin: 1em auto auto auto; /* center the form */
-    padding: .5em;
+    padding: 1em;
     background: #f9f9f9;
     border: 1px solid #c1c1c1;
     border-radius: 5px;
@@ -46,15 +46,19 @@ fieldset > label {
     margin-bottom: 10px;
 }
 
-input {
-    padding: .375em .75em;
+fieldset > label > input {
     margin-right: 10px;
+}
+
+input {
+    padding: .75em;
 }
 
 select {
     height: 30px;
     border-radius: 0px;
     background-color: #fff;
+    width: 50%;
 }
 
 button {
