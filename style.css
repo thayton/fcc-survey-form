@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 1em;
+}
+
+form#survey-form {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-gap: 10px;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset label {
+    display: block;
+}
+
+input, select, textarea, button {
+    grid-column: 2/3;
+}
