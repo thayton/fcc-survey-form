@@ -3,19 +3,24 @@
 }
 
 body {
-    margin: 1em;
+    margin: 1em;    
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 1rem;
 }
 
 h1, p#description {
     text-align: center;
 }
 
-form#survey-form {
+form {
     display: grid;
-    grid-template-columns: 200px 1fr;
-    grid-gap: 1em;
-    max-width: 600px;
-    margin: 0 auto;    
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 1em;
+    background: #f9f9f9;
+    border: 1px solid #c1c1c1;
+    font-size: 1em;
+    line-height: 1.2em;
 }
 
 fieldset {
@@ -25,7 +30,11 @@ fieldset {
 }
 
 label, span {
-    text-align: right;    
+    text-align: right;
+}
+
+label#name-label, label#email-label, label#number-label {
+    padding-top: .375em;
 }
 
 fieldset label {
@@ -33,10 +42,46 @@ fieldset label {
     text-align: left;        
 }
 
-input, select, textarea {
-    grid-column: 2/3;
+input {
+    line-height: 1.5em;
+    padding: .375em .75em;
 }
 
 button {
-    grid-column: 1/3;
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+    cursor:pointer;
+    padding: .5em;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #0069d9;
+}
+
+@media (max-width: 680px) {
+    form {
+        grid-template-columns: 1fr;
+        grid-gap: .5em;
+    }
+
+    label, span {
+        text-align: left;    
+    }
+}
+
+@media (min-width: 680px) {
+    form {
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 1em;
+    }
+
+    input, select, textarea {
+        grid-column: 2/3;
+    }
+
+    button {
+        grid-column: 1/3;
+    }
 }
