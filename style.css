@@ -95,7 +95,6 @@ button:hover {
     input[type="text"], input[type="number"], select, textarea {
         margin-bottom: 1.2em;
     }
-
 }
 
 @media (min-width: 660px) {
