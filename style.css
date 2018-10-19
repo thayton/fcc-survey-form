@@ -87,6 +87,15 @@ button:hover {
         text-align: left;
         font-weight: 300;        
     }
+
+    /* 
+     * Put additional vertical space between the form elements
+     * when we are vertically stacked
+     */
+    input[type="text"], input[type="number"], select, textarea {
+        margin-bottom: 1.2em;
+    }
+
 }
 
 @media (min-width: 660px) {
